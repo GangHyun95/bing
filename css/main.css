@@ -480,7 +480,7 @@ body {
   }
   .goods-img,
 .goods-type {
-    width: 95%;
+    width: 93%;
   }
 }
 @media screen and (max-width: 1399px) {
@@ -551,7 +551,7 @@ body {
   .goods-img,
 .goods-type {
     width: 97%;
-    max-width: 235px;
+    max-width: 232px;
   }
 }
 /* 브랜드샵 */
@@ -579,7 +579,6 @@ body {
 .box-wrap li {
   position: relative;
   width: 16.6666666667%;
-  max-width: 260px;
   height: 250px;
 }
 .box-wrap li:hover > .brand-box {
@@ -701,7 +700,7 @@ body {
   }
   .brand-box,
 .hover-box {
-    width: 95%;
+    width: 93%;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -1069,6 +1068,7 @@ h3 {
   text-align: center;
   margin-bottom: 40px;
 }
+
 .report-wrap {
   display: flex;
   justify-content: space-between;
@@ -1323,3 +1323,4 @@ h3 {
   margin-right: 30px;
   background: url("../images/select_btn01.png") no-repeat center;
   transform: rotate(-90deg);
+}/*# sourceMappingURL=main.css.map */
