@@ -1468,7 +1468,6 @@ h3 {
   position: relative;
   display: block;
   width: 130.5px;
-  height: 14px;
   font-family: Poppins;
   font-size: 14px;
   font-weight: 500;
@@ -1486,6 +1485,9 @@ h3 {
   background: url("../images/select_btn01.png") no-repeat center;
   transform: rotate(-90deg);
 }
+.footer .footer-hidden {
+  display: none;
+}
 
 @media screen and (max-width: 930px) {
   .footer {
@@ -1495,4 +1497,104 @@ h3 {
     width: 100%;
     margin: 0 auto;
   }
-}/*# sourceMappingURL=main.css.map */
+  .footer .footer-3 .copyright {
+    line-height: 20px !important;
+  }
+}
+@media screen and (max-width: 771px) {
+  .footer-hidden {
+    display: block !important;
+  }
+  .copyright {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 770px) {
+  .footer-hidden {
+    display: flex !important;
+    justify-content: space-between !important;
+    padding-top: 80px !important;
+  }
+  .footer-hidden > ul {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .footer-hidden > ul > li > a {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .footer-hidden > ul > li:last-child {
+    padding-left: 25px;
+  }
+  .footer-hidden > p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.2);
+    letter-spacing: -0.21px;
+  }
+  .footer-3 .f-3-right .fo-3-box1 ul li {
+    width: 70px;
+    height: 70px;
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.36), inset 0px 4px 10.8px 2.2px rgba(73, 73, 73, 0.11);
+    background-color: #1b1b1b;
+    border-radius: 50%;
+  }
+  .footer-3 .f-3-right .fo-3-box1 ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .footer-3 .f-3-right .fo-3-box1 ul li .insta {
+    background: url("../images/footer_sns01.png") no-repeat center;
+  }
+  .footer-3 .f-3-right .fo-3-box1 ul li .youtube {
+    background: url("../images/footer_sns02.png") no-repeat center;
+  }
+  .footer-3 .f-3-right .fo-3-box1 ul li .tft {
+    background: url("../images/footer_sns03.png") no-repeat center;
+  }
+  .footer-3 .f-3-right .fo-3-box2 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 355px;
+    height: 70px;
+    border-radius: 35px;
+    box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.36), inset 0px 4px 10.8px 2.2px rgba(73, 73, 73, 0.11);
+    background-color: #1b1b1b;
+    margin-left: 60px;
+    cursor: pointer;
+  }
+  .footer-3 .f-3-right .fo-3-box2 .footer-img1 {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background: url("../images/flag_store.png") no-repeat 20px 50%;
+    padding-left: 94px;
+    line-height: 70px;
+  }
+  .footer-3 .f-3-right .fo-3-box2 .footer-img1 span {
+    position: relative;
+    display: block;
+    width: 130.5px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(153, 153, 153, 0.67);
+    float: left;
+  }
+  .footer-3 .f-3-right .fo-3-box2 .footer-img1 span strong {
+    color: rgba(233, 229, 229, 0.67);
+  }
+  .footer-3 .f-3-right .fo-3-box2 .footer-img2 {
+    width: 10px;
+    height: 20px;
+    text-align: center;
+    margin-right: 30px;
+    background: url("../images/select_btn01.png") no-repeat center;
+    transform: rotate(-90deg);
+  }
+}
