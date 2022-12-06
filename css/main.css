@@ -1510,14 +1510,8 @@ h3 {
   }
 }
 @media screen and (max-width: 770px) {
-  .footer-hidden {
-    display: flex !important;
-    justify-content: space-between !important;
-    padding-top: 80px !important;
-  }
   .footer-hidden > ul {
-    display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap !important;
     align-items: center;
   }
   .footer-hidden > ul > li > a {
@@ -1527,10 +1521,14 @@ h3 {
   .footer-hidden > ul > li:last-child {
     padding-left: 25px;
   }
-  .footer-hidden > p {
-    font-size: 12px;
-    color: rgba(255, 255, 255, 0.2);
-    letter-spacing: -0.21px;
+  .footer-1 {
+    flex-wrap: wrap !important;
+  }
+  .footer-1 .f-logo {
+    margin-bottom: 20px;
+  }
+  .footer-1 .f-right {
+    margin-bottom: 40px;
   }
   .footer-3 .f-3-right .fo-3-box1 ul li {
     width: 70px;
@@ -1554,12 +1552,6 @@ h3 {
     background: url("../images/footer_sns03.png") no-repeat center;
   }
   .footer-3 .f-3-right .fo-3-box2 {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 355px;
-    height: 70px;
     border-radius: 35px;
     box-shadow: 0px 4px 8px 1px rgba(0, 0, 0, 0.36), inset 0px 4px 10.8px 2.2px rgba(73, 73, 73, 0.11);
     background-color: #1b1b1b;
