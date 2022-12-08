@@ -1,183 +1,214 @@
 .footer {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 387px;
-  background: rgba(0, 0, 0, 0.99);
-  margin: 0 auto;
-  padding: 40px 50px 30px;
-
-  .footer-1 {
-    position: relative;
+  margin-top: 140px;
+  background: #1b1b1b;
+  padding: 50px 50px 30px 50px;
+  .footer-top {
     display: flex;
-    height: 30px;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-between;
-    .f-logo {
-      width: 113px;
-      height: 30px;
-      background: url("../images/f_logo.png") no-repeat;
-    }
-    .f-right {
-      position: relative;
-      display: flex;
-      gap: 0 10px;
-      li {
-        height: 30px;
-        a {
-          line-height: 30px;
-          font-family: "Poppins", "Noto Sans KR", sans-serif;
-          font-size: 14px;
-          font-weight: 500;
-          color: #5a5958;
-          font-style: normal;
-        }
-      }
-    }
-  }
-  .footer-2 {
-    display: flex;
-    align-items: flex-start;
-    width: 100%;
-    height: 217px;
-    padding: 30px 0 115px;
-    ul {
-      li {
-        font-family: "Poppins", "Noto Sans KR", sans-serif;
-        width: 600px;
-        height: 48px;
-        line-height: 24px;
-        box-sizing: border-box;
-        font-size: 17px;
-        color: rgba(255, 255, 255, 0.7);
-        .subject {
-          position: relative;
-          width: 50.2px;
-          height: 31px;
-        }
-        .con {
-          box-sizing: border-box;
-          font-style: normal;
-          position: relative;
-          width: 42.34px;
-          height: 41px;
-          padding-top: 10px;
-        }
-      }
-    }
-  }
-  .footer-3 {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 70px;
-    margin: 0 auto;
-    .copyright {
-      font-size: 14px;
-      line-height: 70px;
-      color: rgba(255, 255, 255, 0.5);
-    }
-    .f-3-right {
-      position: relative;
-      display: flex;
-      .fo-3-box1 {
-        position: relative;
-        display: flex;
-
-        ul {
-          position: relative;
-          display: flex;
-          width: 240px;
-          height: 70px;
-          gap: 0 15px;
-          li {
-            width: 70px;
-            height: 70px;
-            box-shadow: 0px 4px 8px 1px rgb(0 0 0 / 36%),
-              inset 0px 4px 10.8px 2.2px rgb(73 73 73 / 11%);
-            background-color: #1b1b1b;
-            border-radius: 50%;
-            a {
-              display: block;
-              width: 100%;
-              height: 100%;
-            }
-
-            .insta {
-              background: url("../images/footer_sns01.png") no-repeat center;
-            }
-            .youtube {
-              background: url("../images/footer_sns02.png") no-repeat center;
-            }
-            .tft {
-              background: url("../images/footer_sns03.png") no-repeat center;
-            }
+    .footer-top-link {
+      > ul {
+        > li {
+          float: left;
+          margin-right: 10px;
+          > a {
+            color: rgba(255, 255, 255, 0.3);
+            font-weight: 500;
           }
         }
+        > li:last-child {
+          margin-right: 0px;
+        }
       }
-      .fo-3-box2 {
+    }
+  }
+  .footer-middle {
+    padding: 30px 0 115px;
+    > ul {
+      > li {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 17px;
+        font-weight: 300;
+        line-height: 30px;
+      }
+      > li:last-child {
+        padding-top: 10px;
+      }
+    }
+  }
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    > p {
+      font-size: 14px;
+      letter-spacing: -0.15px;
+      color: rgba(255, 255, 255, 0.2);
+    }
+    .familysite {
+      width: 667px;
+      flex-shrink: 0;
+      > ul {
+        float: left;
+        > li {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 70px;
+          background: #1f1f1f;
+          float: left;
+          margin: 0 7px;
+        }
+      }
+      .flagstore {
         position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         width: 355px;
         height: 70px;
+        background: #1f1f1f;
         border-radius: 35px;
-        box-shadow: 0px 4px 8px 1px rgb(0 0 0 / 36%),
-          inset 0px 4px 10.8px 2.2px rgb(73 73 73 / 11%);
-        background-color: #1b1b1b;
+        line-height: 70px;
+        float: left;
         margin-left: 60px;
-        cursor: pointer;
-
-        .footer-img1 {
-          position: relative;
-          display: flex;
-          width: 100%;
-          height: 100%;
-          align-items: center;
-          background: url("../images/flag_store.png") no-repeat 20px 50%;
-          padding-left: 94px;
-          line-height: 70px;
-
-          span {
-            position: relative;
-            display: block;
-            width: 130.5px;
-            height: 14px;
-            font-family: Poppins;
+        > a {
+          > img {
+            float: left;
+            margin: 10px 12px;
+          }
+          > p {
             font-size: 14px;
-            font-weight: 500;
             color: rgba(153, 153, 153, 0.67);
             float: left;
-
-            strong {
-              color: rgba(233, 229, 229, 0.67);
+            > strong {
+              color: rgba(255, 255, 255, 0.67);
             }
           }
+          > p::after {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            content: "";
+            height: 6px;
+            width: 12px;
+            background: url("../images/select_btn01.png") no-repeat center;
+            transform: rotate(-90deg);
+            float: right;
+          }
         }
-        .footer-img2 {
-          width: 10px;
-          height: 20px;
-          text-align: center;
-          margin-right: 30px;
-          background: url("../images/select_btn01.png") no-repeat center;
-          transform: rotate(-90deg);
+      }
+    }
+  }
+  .footer-hidden {
+    display: none;
+    padding: 80px 0 0;
+    justify-content: space-between !important;
+    color: #747070;
+    ul {
+      display: flex;
+      li {
+        display: flex;
+        justify-content: space-between;
+        .a1 {
+          position: relative;
+          color: #747070;
+          padding-right: 20px;
+        }
+        .a2 {
+          position: relative;
+          color: #747070;
         }
       }
     }
   }
 }
-@media screen and (max-width: 1400px) {
+
+@media screen and (max-width: 1001px) {
+  .footer-middle {
+    padding: 30px 0 100px !important;
+  }
+  .footer-bottom {
+    > p {
+    }
+  }
+
+  .footer-hidden {
+    display: none !important;
+  }
 }
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 767px) {
   .footer {
-    height: 456px !important;
-    .footer-3 {
-      width: 100%;
-      margin: 0 auto;
-      .copyright {
+    padding: 30px 20px;
+  }
+  .footer-top {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    .footer-top-link {
+      padding: 20px 0 !important;
+    }
+  }
+
+  .footer-middle {
+    text-align: center;
+    padding-bottom: 30px !important;
+    > ul {
+      > li {
+        font-size: 14px !important;
       }
     }
+  }
+  .footer-bottom {
+    display: grid;
+    justify-content: center;
+
+    > p {
+      display: none !important;
+    }
+    .familysite {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      > ul > li {
+        width: 35px !important;
+        height: 35px !important;
+        line-height: 35px !important;
+        margin: 0 15px !important;
+      }
+      > ul > li:nth-child(1) > a > img {
+        width: 15px !important;
+        height: 15px !important;
+      }
+      > ul > li:nth-child(2) > a > img {
+        width: 14px !important;
+        height: 10px !important;
+      }
+      > ul > li:nth-child(3) > a > img {
+        width: 26px !important;
+        height: 15px !important;
+      }
+      .flagstore {
+        margin-left: 0 !important;
+        margin-top: 13px !important;
+        width: 250px !important;
+        height: 45px !important;
+        line-height: 40px !important;
+        padding-left: 10px !important;
+        a > img {
+          width: 32px !important;
+          height: 25px !important;
+        }
+        a > p {
+          font-size: 12px !important;
+        }
+        a > p::after {
+          width: 8px !important;
+          top: 18px !important;
+          right: 20px !important;
+        }
+      }
+    }
+  }
+  .footer-hidden {
+    display: flex !important;
   }
 }
